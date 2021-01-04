@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>全局变量and局部变量</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .code {
+            display: block;
+            font-size: 18px;
+            /* margin-top: 10px;
+            margin-left: 10px; */
+            margin: auto;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>var定义的为局部变量</h3>
+    <h3>直接变量名定义的为全局变量</h3>
+    <code class="code">
+            <!-- 局部变量 -->
+            var a = "1";  
+            <br>
+            <!-- 全局变量 -->
+            b = '1';
+        </code>
+
+    <h3>typeof操作符</h3>
+    <script>
+        var message = "some string";
+        alert(typeof message);
+        alert(typeof(message));
+        alert(typeof 95);
+        var a;
+        alert("a = undeined: " + (a == undefined));
+        var b = undefined;
+        alert("b = undeined: " + (b == undefined));
+    </script>
+
+</body>
+
+</html>
